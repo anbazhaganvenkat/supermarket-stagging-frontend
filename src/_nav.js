@@ -11,7 +11,7 @@ export default {
     },
     {
       name: 'Order List',
-      url: '#',
+      url: '/order-list',
       icon: 'icon-layers',
       badge: {
         variant: 'info',
@@ -20,7 +20,7 @@ export default {
     },
     {
       name: 'Store List',
-      url: '#',
+      url: '/store-list',
       icon: 'icon-drop',
       badge: {
         variant: 'info',
@@ -29,7 +29,7 @@ export default {
     },
     {
       name: 'Collections',
-      url: '#',
+      url: '/collection-list',
       icon: 'icon-star',
       badge: {
         variant: 'info',
@@ -38,13 +38,13 @@ export default {
     },
     {
       name: 'Report',
-      url: '#',
+      url: '/report',
       icon: 'icon-calculator',
       badge: {
         variant: 'info',
         // text: 'NEW',
       },
     },
-    
+
   ],
 };
