@@ -1,0 +1,39 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// Temp fix for reactstrap
+@import '~@coreui/coreui/scss/_dropdown-menu-right.scss';
+
+// If you want to add something do it here
+@import "custom";
+
+// ie fixes
+@import "ie-fix";
+
+.bg-info {
+  background: linear-gradient(to bottom right,#32cafe 0,#3582ec 100%) !important;
+  border: none;
+}
+
+.card.bg-warning {
+  background: linear-gradient(to bottom right,#ecd53e 0,#efaf28 100%);
+  border: none;
+}
+
+.card.bg-danger {
+  background: linear-gradient(to bottom right, #ff695c, #ff4f7b);
+  border: none;
+}
+
+.card.bg-primary {
+  border-color: #187da0;
+  border: none;
+}
+
+.card {
+  box-shadow: 0 13px 21px -4px rgba(66, 66, 68, 0.48);
+  border: none;
+}
