@@ -1,0 +1,11 @@
+.inline-tooltip-wrapper {
+  margin: 0.625rem 0 0;
+  span {
+    display: flex;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.5rem;
+    }
+  }
+}

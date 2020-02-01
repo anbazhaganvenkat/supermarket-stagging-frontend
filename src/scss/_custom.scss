@@ -1,1 +1,782 @@
-// Here you can add other styles
+body {
+  font-family: $theme-font !important;
+  font-size: $button-font-size;
+}
+
+.loggedin-layout {
+  background-color: hsl(240, 9%, 96%);
+}
+
+.app-body {
+  min-height: 94vh;
+}
+
+@media (max-width: 991px) {
+  .app-body {
+    margin-top: 0;
+  }
+}
+
+.btn-primary {
+  background: $theme-color;
+  border: 1px solid $theme-color;
+  color: $color-white;
+
+  &:hover {
+    background: $theme-color-alt;
+    border: 1px solid $theme-color-alt;
+    color: $color-white;
+  }
+}
+
+button {
+  &.btn {
+    -webkit-border-radius: 0.4375rem;
+    -moz-border-radius: 0.4375rem;
+    border-radius: 0.4375rem;
+  }
+}
+
+.btn {
+  &.outline-bold {
+    border-width: 2px;
+  }
+
+  &:hover {
+    background: 1px solid $theme-color-alt;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &.outline-dark {
+    &:hover {
+      background: 1px solid $color-input-dark;
+      border: 1px solid $color-input-dark;
+      color: $color-white !important;
+      text-decoration: none;
+    }
+  }
+}
+
+.astric {
+  color: $color-red;
+}
+
+.header--content {
+  padding-bottom: 200px;
+  padding-top: 100px;
+}
+
+.availability-update-form label {
+  font-size: $label-font-size;
+}
+
+@media screen and (min-width: 768px) {
+  .expert-availability-form-content {
+    margin: auto;
+    width: 55%;
+  }
+}
+
+.radio-btn-label,
+.checkbox-btn-label {
+  font-size: $button-font-size;
+  font-weight: 500;
+}
+
+.checkbox {
+  .checkbox-inline {
+    .form-check-input {
+      margin-top: 9px;
+    }
+  }
+}
+
+.gradient-blue {
+  background-image: linear-gradient(
+    -180deg,
+    $color-cerulean 0%,
+    $color-science-blue 100%
+  );
+}
+
+.find-an-expert-left-side-section-background-image {
+  //background: url("/src/assets/body-triangles.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.mainContainer {
+  background: #33333f;
+  float: left;
+  margin-top: -50px;
+  width: 100%;
+
+  .availability-update-section {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: 767px) {
+      margin-bottom: 20px;
+    }
+    height: 420px;
+    position: relative;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      height: 280px;
+    }
+  }
+
+  .availability-update-header-section {
+    @media screen and (min-width: 767px) {
+      -webkit-transform: translate(-50%, -50%);
+      left: 50%;
+      margin-top: 17%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 400px) {
+      h1 {
+        font-size: $header-font-size;
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
+      margin-top: 13%;
+    }
+    @media only screen and (min-width: 1305px) and (max-width: 1500px) {
+      margin-top: 15%;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-top: 10%;
+    }
+    @media screen and (min-width: 991px) and (max-width: 1200px) {
+      margin-top: 20%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      margin-top: 25%;
+    }
+
+    .header-section {
+      font-size: $header-section-font-size;
+
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        font-size: $span-font-size;
+      }
+      @media screen and (min-width: 500px) and (max-width: 767px) {
+        font-size: $button-font-size;
+      }
+      @media screen and (min-width: 768px) and (max-width: 990px) {
+        font-size: $sub-menu-font-size;
+      }
+    }
+  }
+}
+
+.theme-btn {
+  background-color: #237bd3 !important;
+  border-color: #237bd3 !important;
+}
+
+.footer {
+  background-color: $footer-color;
+  bottom: 0;
+  color: $color-white;
+  font-size: $small-font-size;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.google-login {
+  background: #278efc !important;
+  border-radius: 8px !important;
+  color: $color-white !important;
+  font-size: $paragraph-font-size !important;
+  justify-content: center;
+  min-height: 46px;
+  position: relative;
+  width: 100%;
+
+  > div {
+    background: #298dfa !important;
+
+    svg {
+      g {
+        path:not(:last-child) {
+          fill: white !important;
+        }
+      }
+    }
+    position: relative;
+  }
+}
+
+.separator {
+  border-bottom: 1px solid #ccc;
+  margin: 30px 0;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background-color: $color-white;
+    content: "OR";
+    left: 50%;
+    margin-left: -20px;
+    padding: 0 10px;
+    position: absolute;
+    top: -10.5px;
+  }
+}
+
+.vertical-center {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-container {
+  color: $color-dark;
+
+  .acceptedTerms {
+    span {
+      color: $color-dark;
+    }
+  }
+}
+
+.btn-login {
+  background: #df674c !important;
+  color: #fff !important;
+  font-size: $paragraph-font-size !important;
+  font-weight: bold !important;
+  min-height: 46px;
+
+  &:hover {
+    background: #ff876c !important;
+  }
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin-top: 7px !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  &:hover {
+    text-decoration: none;
+  }
+
+  &::after {
+    color: $color-white;
+  }
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.logout-sidebar-button {
+  bottom: 118px;
+  display: inline-block !important;
+  position: absolute;
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    bottom: 128px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    bottom: 154px;
+  }
+  width: 100%;
+}
+
+// Page Not Found Starts
+.page-not-found {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-not-found-404 {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 3.5rem;
+  }
+}
+// Page Not Found Ends
+
+// Error message starts
+.error-message {
+  color: $error-message-color;
+  font-size: $message-font-size;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+// Error message Ends
+
+// removed .components class, it's unnecessary
+
+.bg-color-black {
+  background-color: #33333f;
+}
+
+.right-side-content {
+  margin-bottom: 50px;
+}
+
+.acceptedTerms {
+  float: left;
+  padding-bottom: 15px;
+
+  span {
+    color: #23282c;
+    font-size: $span-font-size;
+    float: left;
+    padding-left: 10px;
+    margin-top: -3px;
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+    float: left;
+    position: relative;
+  }
+
+  .invalid-feedback {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.acceptedTerms input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 2px solid #23282c;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.acceptedTerms input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.select__multi-value {
+  background-color: $color-white !important;
+}
+
+.profile-picture-preview {
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 110px;
+  width: 110px;
+}
+
+.term-and-condition {
+  float: left;
+  font-size: $span-font-size;
+  margin-top: -3px;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+.btn.btn-secondary {
+  background-color: $primary-button-color;
+}
+
+// Added an secondary button color
+.btn.btn-secondary {
+  color: $color-white;
+  background-color: $primary-button-color;
+  border: none;
+}
+
+.btn.btn-secondary:hover {
+  background-color: $secondary-button-color-hover;
+  border: none;
+}
+
+.btn.btn-secondary:focus,
+.btn-secondary.focus {
+  color: $color-white;
+  background-color: $primary-button-color;
+  border: none;
+}
+
+.btn.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: $color-white;
+  background-color: $primary-button-color;
+  border: none;
+  font-size: $span-font-size;
+}
+
+.btn.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: $color-white;
+  background-color: $primary-button-color;
+  border: none;
+}
+
+.btn.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: white;
+}
+
+.fa.fa-plus {
+  font-size: $small-font-size !important;
+  padding-left: 0px;
+  padding-right: 6px;
+}
+
+.datepicker {
+  background: #f3f3f4;
+  border: none;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.table-filter {
+  a {
+    color: $theme-color-alt;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid $color-primary-alt;
+    color: $color-black;
+
+    a {
+      color: $color-black;
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .count-card {
+    margin-top: 10px;
+  }
+}
+
+// Update Collection Page
+.collection-playbook {
+  .playbook-field {
+    .margin-top-30 {
+      margin-top: 30px;
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+#playbook {
+  h5 {
+    font-weight: 600;
+  }
+}
+
+//playbook card css hover effect
+.playbook-card-link {
+  .card {
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px 0 rgba(41, 41, 52, 0.2);
+
+    &:hover {
+      box-shadow: 5px 5px 28px 0 rgba(41, 41, 52, 0.2);
+    }
+  }
+}
+
+.project-list-card {
+  .small {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  .status-header {
+    font-size: 12px;
+    font-weight: bold;
+
+    .notification {
+      background-color: $color-red;
+    }
+  }
+}
+
+.Approved {
+  color: green;
+  font-weight: bold;
+}
+
+.Pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.Rejected {
+  color: red;
+  font-weight: bold;
+}
+
+.approve-btn-hover:hover {
+  background-color: green !important;
+  color: #fff !important;
+}
+
+.reject-btn-hover:hover {
+  background-color: red !important;
+  color: #fff !important;
+}
+
+.landing-page-status-active {
+  background-color: #59c497;
+}
+
+.landing-page-status-draft {
+  background-color: #f8c017;
+}
+
+.landing-create-popup {
+  .modal-content {
+    border-radius: 15px;
+  }
+}
+
+.landing-group-dropdown .more-dropdown .btn.btn-secondary svg {
+  fill: #c8c8cb !important;
+}
+
+.landing-group-dropdown .show {
+  width: auto;
+}
+
+.landing-page-status-dropdown {
+  background-color: white;
+  padding: 5px;
+  border: none;
+  @media screen and (min-width: 767px) {
+    width: 150px;
+  }
+}
+
+.select-style {
+  border: #e7e7ea;
+  width: 187px;
+  background: #e7e7ea;
+  outline: none;
+}
+
+.default-input {
+  background: rgb(243, 243, 244) !important;
+  border: none !important;
+  border-radius: 5px !important;
+  font-size: 14px !important;
+  height: 40px !important;
+}
+
+.banner-image-upload-link {
+  color: #009dda;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Toastify__toast-container--top-right {
+  @media only screen and (min-width: 1882px) {
+    top: 2.8em !important;
+    right: 43.4em !important;
+  }
+  @media only screen and (min-width: 1500px) and (max-width: 1882px) {
+    top: 2.8em !important;
+    right: 23.4em !important;
+  }
+  @media only screen and (min-width: 1305px) and (max-width: 1500px) {
+    top: 2.8em !important;
+    right: 6em !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    top: 2.8em !important;
+  }
+  @media screen and (min-width: 991px) and (max-width: 1200px) {
+    top: 2.8em !important;
+    right: 2.7em !important;
+  }
+  @media screen and (min-width: 768px) and (max-width: 990px) {
+    top: 2.8em !important;
+    right: 2em !important;
+  }
+}
+
+// Inline Edit in the landing page edit page starts
+.inline-edit-section {
+  margin-bottom: 2.75rem;
+
+  .landing-page-name {
+    height: 55px;
+    font-size: 2.5rem;
+    width: -webkit-fill-available;
+  }
+
+  .landing-page-edit {
+    position: absolute;
+    right: 15px;
+    margin-top: -1px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    background-color: #f0f0f0;
+    z-index: 2;
+
+    i {
+      cursor: pointer;
+      border: 1px solid #aaa;
+      width: 30px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  .landing-page-vanity-url {
+    width: -webkit-fill-available;
+  }
+}
+// Inline Edit in the landing page edit page ends
+
+.expert-modal {
+  .modal-content {
+    max-width: 100% !important;
+  }
+}
+
+// Experts and playbooks Cards Active Starts
+.active-experts,
+.active-playbooks {
+  border: 3px;
+  background-color: #59c497;
+  border-radius: 27px;
+}
+
+.inactive-experts,
+.inactive-playbooks {
+  border: 3px;
+  background-color: #8a8a8a;
+  border-radius: 27px;
+}
+// Experts and playbooks Cards Active Ends
+
+.inactive-experts,
+.inactive-playbooks {
+  border: 3px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 27px;
+}
+// Experts and playbooks Cards Active Ends
+
+// Landing page blocks edit expert list
+.expert-list-section,
+.playbook-list-section {
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+}
+
+// Success message popup starts
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.modal:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.success-modal-popup {
+  .modal-content {
+    max-width: 100% !important;
+    border-radius: 0;
+  }
+}
+// Success message popup ends
+
+//Expert signup basic information group
+.expert-professional-details {
+  position: relative;
+  width: 100%;
+
+  .years-of-experience {
+    padding-right: 15px;
+  }
+
+  .years-of-experience,
+  .timezone {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+//Multiline Ellipsis
+$font-size: 16px;
+$line-height: 1.4;
+$lines-to-show: 3;
+
+.multiline-ellipsis {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 400px;
+  height: $font-size * $line-height * $lines-to-show; /* Fallback for non-webkit */
+  margin: auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-self: center;
+}

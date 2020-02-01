@@ -1,0 +1,188 @@
+// images to act responsively.
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  display: block;
+}
+
+// other base stlyes
+.image-center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.desktop-only {
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.p1 {
+  font-size: 20px;
+}
+
+.p2 {
+  font-size: 18px;
+}
+
+.font-size {
+  @media (min-width: 768px) {
+    font-size: 9px !important;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 10px !important;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 10px !important;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 12px !important;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 15px !important;
+  }
+}
+
+.color-white {
+  color: $color-white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// btn
+.btn {
+  &.btn-link {
+    &.text-underline {
+      text-decoration: underline;
+    }
+  }
+
+  &.btn-outline-grayed {
+    border: 1px solid rgba(41, 41, 52, 0.5);
+    color: rgba(41, 41, 52, 0.5);
+  }
+}
+
+//text
+.text-decoration {
+  text-decoration: none !important;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-link {
+  color: $color-cerulean;
+}
+
+.text-grayed {
+  opacity: 0.5;
+}
+
+.text-inline-grayed {
+  color: rgba(41, 41, 52, 0.5);
+}
+
+.text-orange {
+  color: $color-orange;
+}
+
+// boostrap default overwrites
+.h8 {
+  font-size: 0.625rem;
+}
+
+.h7 {
+  font-size: 0.75rem;
+}
+
+.h6-5 {
+  font-size: 0.875rem;
+}
+
+.h6-5-important {
+  font-size: 0.875rem !important;
+}
+
+.h1-5 {
+  font-size: 2.25rem;
+}
+
+.lh-2 {
+  line-height: 2rem;
+}
+// badges extension
+
+.badge-outline {
+  background-color: $color-white !important;
+  font-weight: 700 !important;
+
+  &.badge-dark {
+    border: 1px solid rgba(41, 41, 52, 0.25);
+    color: $color-dark;
+  }
+}
+
+// replicating badge-group as input-group or button-group below
+.badges {
+  .input-group {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    > .input-group-prepend {
+      > .input-group-text {
+        padding: 0.25rem 0.5rem;
+
+        svg {
+          width: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.input-group {
+  > .badge {
+    position: relative;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:not(:first-child) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &.group-dark {
+    .input-group-text {
+      background-color: $color-dark;
+      color: $color-white;
+      border-color: rgba(41, 41, 52, 0.25);
+
+      svg {
+        color: currentColor;
+      }
+    }
+  }
+}

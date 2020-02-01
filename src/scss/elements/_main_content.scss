@@ -1,0 +1,217 @@
+// dashboard site maincontent styles
+.site-maincontent {
+  padding-top: 1.5rem;
+}
+
+// global page heading related styles
+.page-heading {
+  margin-bottom: 1.5rem;
+  .btn-wrapper {
+    .btn {
+      white-space: nowrap;
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      height: 100%;
+      padding-right: 1rem;
+      svg {
+        margin-bottom: 0;
+      }
+      span {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  &.cover {
+    background: #fff;
+    padding: 1.25rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    .form-control {
+      &:focus {
+        background-color: #e7e7ea;
+        border: 1px solid #e7e7ea;
+      }
+    }
+  }
+}
+
+// global page search component
+.page-search {
+  max-width: 295px;
+  .input-group-text {
+    background-color: $color-input-gray;
+    svg {
+      fill: $color-input-gray-dark;
+    }
+  }
+  input {
+    background-color: $color-input-gray;
+    outline: none !important;
+    &::placeholder {
+      color: $color-input-dark;
+    }
+  }
+  .input-group-text,
+  .form-control {
+    border-radius: 7px;
+    border: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+// landing pages globals
+.rating-and-usage {
+  margin: 0.625rem 0 0;
+}
+
+// main-content styles for public pages
+.content {
+  margin-top: 2rem;
+  p {
+    &:not(:last-child) {
+      margin-bottom: 1.75rem;
+    }
+    img {
+      float: left;
+      max-width: 270px;
+      margin: 0 1.75rem 1rem 0;
+    }
+    + ul {
+      margin-top: -0.75rem;
+      + ul {
+        margin-top: auto;
+      }
+    }
+  }
+  ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+}
+
+// cart page related
+.cart-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid #d8d8d8;
+  width: 100%;
+  p {
+    &.h6 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.sidebar-content {
+  .cart-item {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.875rem;
+    > p,
+    > ul {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &:last-of-type {
+      border: none;
+    }
+  }
+}
+
+// order-item
+.order-item {
+  .media-left {
+    max-width: 270px;
+    margin-right: 1.25rem;
+  }
+}
+
+// custom checkbox styles , let's have them here for the time being, might move it to it's own stylesheet.
+.custom-checkbox {
+  &.form-group {
+    margin-bottom: 0;
+  }
+  label {
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+    margin-bottom: 0;
+  }
+  .input-wrapper {
+    input {
+      display: none;
+    }
+  }
+}
+
+// content with bg and shadow
+.marketplace-section-content {
+  background-color: $color-white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  .content {
+    margin-top: 0;
+  }
+  .cart-item {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.recommendations {
+  margin-top: 1rem;
+  p {
+    &:last-child {
+      margin-bottom: 1.75rem;
+    }
+  }
+}
+
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  justify-items: center;
+  .certification {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.employments {
+  .employment {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+      &:after {
+        content: " ";
+        width: 140px;
+        height: 1px;
+        background-color: $color-black;
+        margin: 2rem 0 0;
+        display: block;
+      }
+    }
+  }
+}
+
+.recommendations,
+.certifications,
+.employments,
+.educations {
+  margin-top: 1rem;
+  .content-title {
+    p {
+      font-size: 1rem;
+    }
+  }
+  p {
+    font-size: 0.875rem;
+  }
+}

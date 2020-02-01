@@ -1,0 +1,220 @@
+.project-list {
+  margin: 1.35rem 0 0;
+
+  .project {
+    background-color: $color-white;
+    color: #212529;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.35rem;
+
+    &:hover {
+      color: #212529;
+    }
+
+    .field-wrapper {
+      p,
+      span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+      }
+      &:not(:last-child) {
+        margin: 0 0 1.25rem;
+      }
+      p {
+        margin-bottom: 0;
+        line-height: 1.125rem;
+        span {
+          &:before {
+            content: " ";
+          }
+        }
+      }
+    }
+    .project-maininfo {
+      padding: 1.35rem 1.35rem 0.75rem;
+      min-height: 224px;
+      max-height: 224px;
+      border-bottom: 1px solid $color-background-gray;
+    }
+    .project-playbook-card {
+      min-width: 265px;
+      margin-bottom: 0 !important;
+      .card {
+        box-shadow: none;
+        .card-header {
+          height: 224px;
+          position: relative;
+        }
+        .card-body {
+          height: 148px;
+        }
+        .new-message,
+        .new-alert-message {
+          position: absolute;
+          background-color: $color-notification-orange;
+          color: white;
+          font-weight: 300;
+        }
+        .new-message {
+          top: 10px;
+          left: 10px;
+          display: flex;
+          padding: 0.5625rem 0.75rem;
+          border-radius: 19px;
+          line-height: 1.25rem;
+          svg {
+            height: 20px;
+            width: 20px;
+            margin-right: 0.5rem;
+          }
+        }
+        .new-alert-message {
+          bottom: -1px;
+          left: 0;
+          right: 0;
+          padding: 0.875rem 1.25rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+    .project-finances {
+      margin-right: 1.125rem;
+      max-width: 250px;
+      min-width: 250px;
+      width: 100%;
+    }
+    .project-progress {
+      width: 100%;
+      min-width: 248px;
+      max-width: 248px;
+    }
+    .user-wrapper {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .field-icon {
+        border-radius: 100%;
+        background-color: $color-background-gray;
+        overflow: hidden;
+        height: 2rem;
+      }
+    }
+    .field-icon {
+      width: 2rem;
+      min-width: 2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      + p {
+        margin: 0 0 0 1rem;
+      }
+    }
+    .project-timeline {
+      border-left: 1px solid $color-background-gray;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      padding-left: 1.875rem;
+    }
+  }
+  .steps-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .step {
+      display: inline-flex;
+      align-items: center;
+      .step-icon {
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 2px solid $color-grey-dark;
+        margin: 0 1.25rem 0 0;
+        svg {
+          max-height: 22px;
+          color: $color-grey-dark;
+        }
+      }
+
+      .step-status-text {
+        display: none;
+      }
+
+      .feather-arrow-right {
+        color: $color-input-gray;
+      }
+
+      .step-status-text,
+      .feather-arrow-right,
+      .step-icon {
+        margin: 0 0.8rem 0 0;
+      }
+      &.current-step {
+        .step-icon {
+          background-color: $color-cerulean;
+          border-color: $color-cerulean;
+        }
+        .step-status-text {
+          display: block;
+        }
+      }
+      &.completed-step {
+        .step-icon {
+          background-color: $color-success;
+          border-color: $color-success;
+        }
+      }
+      &.completed-step,
+      &.current-step {
+        .step-icon {
+          svg {
+            color: $color-white;
+          }
+        }
+      }
+      &:last-child {
+        .step-status-text {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  @include small-desktop {
+    .project {
+      .project-playbook-card {
+        min-width: 235px;
+      }
+      .project-maininfo {
+        padding: 1rem 0.25rem 0.75rem 1rem;
+      }
+      .project-timeline {
+        padding-left: 1rem;
+      }
+      .project-finances {
+        min-width: 210px;
+        max-width: 210px;
+        margin-right: 1rem;
+      }
+      .project-progress {
+        max-width: 205px;
+        min-width: 205px;
+      }
+    }
+    .steps-wrapper {
+      .step {
+        .feather-arrow-right,
+        .step-status-text,
+        .step-icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

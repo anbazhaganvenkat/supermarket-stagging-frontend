@@ -1,11 +1,19 @@
-import React from 'react';
+import React from "react";
 
 
-const Dashboard = React.lazy(() => import('./views/Dashboard/Dashboard'));
+// Login
+import Login from "./views/login";
 
+
+// List of routes
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+
+  {
+    path: "/login",
+    exact: true,
+    name: "Login",
+    component: Login
+  }
 ];
 
 export default routes;

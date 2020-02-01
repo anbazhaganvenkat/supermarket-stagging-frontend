@@ -1,0 +1,55 @@
+.rating-wrapper,
+.usage-wrapper {
+  svg {
+    margin-right: 4px;
+    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    &.filled {
+      color: #df674c;
+      fill: currentColor;
+      path {
+        fill: currentColor;
+      }
+    }
+  }
+  .h7 {
+    line-height: 1;
+    margin-top: 4px;
+  }
+}
+.rating-wrapper {
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+// user-ratings
+.user-ratings {
+  margin: 1.5rem 0 0;
+  .user-rating {
+    .media-left {
+      width: 2rem;
+      height: 2rem;
+      overflow: hidden;
+      border-radius: 100%;
+      margin-right: 0.5rem;
+      img {
+        max-width: none;
+        height: 100%;
+      }
+    }
+    .rating-wrapper {
+      span {
+        margin-right: 0.5rem;
+      }
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  .load-more {
+    font-size: 0.875rem;
+  }
+}

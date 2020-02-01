@@ -1,0 +1,12 @@
+.dropzone-wrapper {
+  background-color: $color-background-gray;
+  border: 2px dashed $color-grey-dark;
+  border-radius: 5px;
+  display: flex;
+  max-height: 250px;
+  min-height: 250px;
+  .dropzone {
+    flex: 1;
+    outline: none;
+  }
+}
