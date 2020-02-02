@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
+import SweetAlert from 'sweetalert2-react';
 
 class OrderList extends Component {
   constructor(props) {
@@ -9,6 +10,57 @@ class OrderList extends Component {
 
   render() {
 
+    const columns = [
+      {
+
+        Header: 'Order Number',
+        accessor: 'OrderNumber',
+        headerClassName: 'text-align:center'
+      },
+      {
+
+        Header: 'Sales Excutive Name',
+        accessor: 'name',
+        headerClassName: 'text-align:center'
+      },{
+        Header: 'Shop Name',
+        accessor: 'age'
+      },
+      {
+        Header: 'Shop Code',
+        accessor: 'shopcode'
+      },
+
+      {
+        Header: 'Status',
+        accessor: 'status'
+      },
+      {
+        Header:"Actions",
+        Cell: props => {
+          return(
+            <div>
+              <button className="btn btn-primary btn-sm m-1" onClick={() => {
+                // this.updateRow(props.original.id);
+              }}>Edit
+              </button>
+              <button className="btn btn-danger btn-sm" onClick={() => {
+                // this.deleteRow(props.original.id)
+              }}>Delete
+              </button>
+            </div>
+          )
+        },
+        style: {
+          background: "white",
+          color:"black"
+        },
+        sortable: false,
+        filterable:false,
+        width: 100,
+        maxWidth: 100,
+        minWidth: 100
+      }]
     const data = [{
       OrderNumber:'1',
       name: 'Ayaan',
@@ -70,31 +122,6 @@ class OrderList extends Component {
       shopcode:'18',
       status:'Delivered'
     }]
-    const columns = [
-      {
-
-        Header: 'Order Number',
-        accessor: 'OrderNumber',
-        headerClassName: 'text-align:center'
-      },
-      {
-
-      Header: 'Sales Excutive Name',
-      accessor: 'name',
-        headerClassName: 'text-align:center'
-    },{
-      Header: 'Shop Name',
-      accessor: 'age'
-    },
-      {
-        Header: 'Shop Code',
-        accessor: 'shopcode'
-      },
-
-      {
-        Header: 'Status',
-        accessor: 'status'
-      }]
 
 
     return (

@@ -130,6 +130,32 @@ class CollectionList extends Component {
       {
         Header: 'Total',
         accessor: 'total'
+      },
+      {
+        Header:"Actions",
+        Cell: props => {
+          return(
+            <div>
+              <button className="btn btn-primary btn-sm m-1" onClick={() => {
+                // this.updateRow(props.original.id);
+              }}>Edit
+              </button>
+              <button className="btn btn-danger btn-sm" onClick={() => {
+                // this.deleteRow(props.original.id)
+              }}>Delete
+              </button>
+            </div>
+          )
+        },
+        style: {
+          background: "white",
+          color:"black"
+        },
+        sortable: false,
+        filterable:false,
+        width: 100,
+        maxWidth: 100,
+        minWidth: 100
       }
       ]
 
