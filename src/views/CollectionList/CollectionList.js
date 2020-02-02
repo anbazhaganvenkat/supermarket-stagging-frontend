@@ -61,14 +61,14 @@ class CollectionList extends Component {
       shopcode:'12',
       paymentway:'Cash',
       cashamount:'800',
-      date:'26-01-2020'
+      date:'02-02-2020'
     },{
       OrderNumber:'8',
       name: 'Virat',
       shopname: 'D-Mart',
       shopcode:'13',
       paymentway:'Bank',
-      date:'26-01-2020'
+      date:'02-02-2020'
     },{
       OrderNumber:'9',
       name: 'Rohit',
@@ -76,7 +76,7 @@ class CollectionList extends Component {
       shopcode:'14',
       paymentway:'Cash',
       cashamount:'300',
-      date:'26-01-2020'
+      date:'02-02-2020'
     },{
       OrderNumber:'10',
       name: 'Dhoni',
@@ -86,7 +86,7 @@ class CollectionList extends Component {
       bankamount:'1000',
       cashamount:'Null',
       total:'1000',
-      date:'26-01-2020'
+      date:'02-02-2020'
     }]
     const columns = [
       {
