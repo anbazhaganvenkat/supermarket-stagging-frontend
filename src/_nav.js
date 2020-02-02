@@ -37,6 +37,24 @@ export default {
       },
     },
     {
+      name: 'Sales Excutive',
+      url: '/sales-exctive',
+      icon: 'icon-star',
+      badge: {
+        variant: 'info',
+        // text: 'NEW',
+      },
+    },
+    {
+      name: 'Inventory',
+      url: '/inventory',
+      icon: 'icon-star',
+      badge: {
+        variant: 'info',
+        // text: 'NEW',
+      },
+    },
+    {
       name: 'Report',
       url: '/report',
       icon: 'icon-calculator',
