@@ -47,7 +47,7 @@ export default {
     },
     {
       name: 'Inventory',
-      url: '#',
+      url: '/inventory',
       icon: 'icon-star',
       badge: {
         variant: 'info',

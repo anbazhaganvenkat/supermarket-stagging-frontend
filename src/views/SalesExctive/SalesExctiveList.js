@@ -19,18 +19,21 @@ class SalesExctiveList extends Component {
       name: 'Ayaan',
       username: 'ayaan@gmail.com',
       city:'Banagalore',
+      state:'12-2-2012',
       date:'02-02-2020'
     },{
       sno:'2',
       name: 'Ahana',
       username: 'ahana@gmail.com',
       city:'Banagalore',
+      state:'22-12-2012',
       date:'02-02-2020'
     },{
       sno:'3',
       name: 'Peter',
       username: 'peter@gmail.com',
       city:'Chennai',
+      state:'12-12-2012',
       status:'Active',
       date:'02-02-2020'
     },{
@@ -38,12 +41,14 @@ class SalesExctiveList extends Component {
       name: 'Virat',
       username: 'virat@gmail.com',
       city:'Banagalore',
+      state:'12-12-2012',
       date:'02-02-2020'
     },{
       sno:'5',
       name: 'Rohit',
       username: 'rohit@gmail.com',
       shopcode:'800',
+      state:'12-12-2012',
       city:'Banagalore',
       date:'02-02-2020'
     },{
@@ -51,6 +56,7 @@ class SalesExctiveList extends Component {
       name: 'Dhoni',
       username: 'dhoni@gmail.com',
       shopcode:'803',
+      state:'12-12-2012',
       city:'Chennai',
       date:'02-02-2020'
     },{
@@ -58,6 +64,7 @@ class SalesExctiveList extends Component {
       name: 'Peter',
       username: 'peter@gmail.com',
       city:'Chennai',
+      state:'12-12-2012',
       status:'Active',
       date:'02-02-2020'
     },{
@@ -65,6 +72,7 @@ class SalesExctiveList extends Component {
       name: 'Virat',
       username: 'virat@gmail.com',
       status:'Active',
+      state:'12-12-2012',
       city:'Banagalore',
       date:'02-02-2020'
     },{
@@ -72,6 +80,7 @@ class SalesExctiveList extends Component {
       name: 'Rohit',
       username: 'rohit@gmail.com',
       city:'Chennai',
+      state:'12-12-2012',
       status:'Active',
       date:'02-02-2020'
     },{
@@ -79,7 +88,7 @@ class SalesExctiveList extends Component {
       name: 'Dhoni',
       username: 'dhoni@gmail.com',
       city:'Banagalore',
-      state:'KA',
+      state:'12-12-2012',
       status:'In-Active',
       total:'1000',
       date:'02-02-2020'
@@ -87,7 +96,7 @@ class SalesExctiveList extends Component {
     const columns = [
       {
 
-        Header: 'S No',
+        Header: 'Emp ID',
         accessor: 'sno',
       },
       {
@@ -112,7 +121,7 @@ class SalesExctiveList extends Component {
       ,
 
       {
-        Header: 'State',
+        Header: 'Joining Date',
         accessor: 'state'
       }
       ,
