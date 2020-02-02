@@ -17,7 +17,7 @@ const routes = [
   { path: '/store-list', name: 'StoreList', component: StoreList },
   { path: '/collection-list', name: 'CollectionList', component: CollectionList },
   { path: '/sales-exctive', name: 'SalesExctiveList', component: SalesExctiveList },
-  { path: '/add', name: 'Add', component: add },
+  { path: '/add', name: 'SalesExctiveAdd', component: add },
   { path: '/inventory', name: 'Inventory', component: Inventory },
   { path: '/report', name: 'Report', component: Report },
 ];

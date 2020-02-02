@@ -129,6 +129,7 @@ class SalesExctiveList extends Component {
           <AddButton
             type="button"
             className="mb-3"
+            onClick={event =>  window.location.href='/add'}
             />
         </div>
         <div>
