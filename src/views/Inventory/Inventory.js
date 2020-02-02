@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import AddButton from "../../components/AddButton";
+import PageSearch from "../../components/PageSearch";
 
 
 
@@ -9,6 +10,10 @@ class Inventory extends Component {
   constructor(props) {
     super(props);
   }
+  // Search playbook
+  _handleInputChange = e => {
+    console.log(e.target.value);
+  };
 
   render() {
     const data = [{
@@ -131,6 +136,13 @@ class Inventory extends Component {
 
     return (
       <div className="animated fadeIn">
+        <div className="col-md-4">
+          <PageSearch
+            classnames="page-search text-right"
+            placeholder={"Search inventory..."}
+            onChange={this._handleInputChange.bind(this)}
+          />
+        </div>
         <div className="text-right">
           <AddButton
             type="button"
